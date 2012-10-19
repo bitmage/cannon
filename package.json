@@ -1,0 +1,32 @@
+{
+  "name": "Cannon",
+  "description": "Test postal message bus over wifi.",
+  "version": "0.0.1-14",
+  "author": "Brandon Mason <q@bitmage.net> (http://bitmage.net/)",
+  "contributors": [
+    {
+      "name": "Chris Toledo",
+      "email": "uberscientist@gmail.com"
+    },
+    {
+      "name": "Brandon Mason",
+      "email": "q@bitmage.net"
+    }
+  ],
+  "main": "server/start.coffee",
+  "dependencies": {
+    "coffee-script": "*",
+    "async": "*",
+    "postal": "*",
+    "should": "*",
+    "connect": "2.3.4",
+    "sugar": "*"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "private": true
+}
