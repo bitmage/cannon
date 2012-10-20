@@ -4,4 +4,10 @@
   border-width: 1px;
   border-color: black;
   height: 300px;
+  width: 400px;
+  padding: 6px;
+}
+
+p {
+  margin: 0px;
 }
