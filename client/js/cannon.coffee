@@ -1,9 +1,9 @@
 channel = postal.channel { channel: 'chat', topic:'message' }
 
 subscription = channel.subscribe (data, envelope) ->
-  console.log data
-  $('#display').append data
+  console.log data.text
+  $('#display').append "<p>#{data.text}</p>"
 
-$('#send').click ->
-  console.log 'click'
-  channel.publish {test: 'Hello!'}
+$ ->
+  $('#send').click ->
+    channel.publish {text: 'Hello!'}

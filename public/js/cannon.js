@@ -8,14 +8,15 @@
   });
 
   subscription = channel.subscribe(function(data, envelope) {
-    console.log(data);
-    return $('#display').append(data);
+    console.log(data.text);
+    return $('#display').append("<p>" + data.text + "</p>");
   });
 
-  $('#send').click(function() {
-    console.log('click');
-    return channel.publish({
-      test: 'Hello!'
+  $(function() {
+    return $('#send').click(function() {
+      return channel.publish({
+        text: 'Hello!'
+      });
     });
   });
 
