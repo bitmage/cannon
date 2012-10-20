@@ -1,3 +1,19 @@
-<p>Hello World</p>
-
-<script src="js/cannon.js"></script>
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="js/underscore.js"></script>
+  <script>
+    if (typeof jQuery == 'undefined') {
+      document.write(unescape("%3Cscript src='jquery-1.8.2.min.js'%3E%3C/script%3E"));
+    }
+  </script>
+  <script src="js/postal.js"></script>
+  <script src="js/cannon.js"></script> 
+</head>
+<body>
+  <p>Hello World</p>
+  <div id='display'></div>
+  <button id='send'>send</button>
+</body>
