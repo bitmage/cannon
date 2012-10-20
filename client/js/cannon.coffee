@@ -6,4 +6,4 @@ subscription = channel.subscribe (data, envelope) ->
 
 $ ->
   $('#send').click ->
-    channel.publish {text: 'Hello!'}
+    channel.publish {text: $('#input-text').val()}

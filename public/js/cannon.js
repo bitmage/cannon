@@ -14,7 +14,7 @@
   $(function() {
     return $('#send').click(function() {
       return channel.publish({
-        text: 'Hello!'
+        text: $('#input-text').val()
       });
     });
   });
